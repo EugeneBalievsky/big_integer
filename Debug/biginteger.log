@@ -1,0 +1,9 @@
+﻿  BigInteger.cpp
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(49,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(83,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(86,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(107,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(110,9): warning C4018: <: несоответствие типов со знаком и без знака
+  main.cpp
+  Создание кода...
+  biginteger.vcxproj -> C:\Users\EVGENE\source\repos\biginteger\biginteger\Debug\biginteger.exe
