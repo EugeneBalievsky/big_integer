@@ -7,10 +7,12 @@
 
 
 int main() {
-	BigInteger n(988);
-	BigInteger m("988");
-	BigInteger s = n - m;
+	BigInteger n(989);
+	BigInteger m("-988");
+	BigInteger s = n + m;
 	
+	n.print();
+	m.print();
 	s.print();
 	
 	return 0;

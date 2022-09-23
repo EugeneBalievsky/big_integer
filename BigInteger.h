@@ -18,8 +18,10 @@ public:
 	friend const BigInteger operator - (const BigInteger& i);
 	friend bool operator ==  (const BigInteger& left, const BigInteger& right);
 	friend bool operator !=  (const BigInteger& left, const BigInteger& right);
-	friend bool operator <  (BigInteger left, BigInteger right);
-	friend bool operator <=  (BigInteger left, BigInteger right);
+	friend bool operator <  (const BigInteger& left, const BigInteger& right);
+	friend bool operator <=  (const BigInteger& left, const BigInteger& right);
+	friend bool operator >  (const BigInteger& left, const BigInteger& right);
+	friend bool operator >=  (const BigInteger& left, const BigInteger& right);
 	friend BigInteger operator + (const BigInteger& left, const BigInteger& right);
 	friend BigInteger operator - (BigInteger left, BigInteger right);
 	void print();
