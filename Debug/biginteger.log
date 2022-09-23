@@ -1,23 +1,2 @@
-﻿  BigInteger.cpp
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(50,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(114,30): error C2039: "+": не является членом "BigInteger".
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.h(8): message : см. объявление "BigInteger"
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(114,49): error C2270: +: модификаторы недопустимы для функций, не являющихся членами
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(115,21): error C2355: "this": может указываться только в нестатических членах-функциях или инициализаторах нестатических членов данных
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(115,25): error C2512: BigInteger: нет подходящего конструктора по умолчанию
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(115,25): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(118,30): error C2039: "-": не является членом "BigInteger".
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.h(8): message : см. объявление "BigInteger"
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(118,49): error C2270: -: модификаторы недопустимы для функций, не являющихся членами
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(119,19): error C2355: "this": может указываться только в нестатических членах-функциях или инициализаторах нестатических членов данных
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(119,17): error C2512: BigInteger::BigInteger: нет подходящего конструктора по умолчанию
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(120,6): error C2248: BigInteger::is_negative: невозможно обратиться к private член, объявленному в классе "BigInteger"
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.h(11): message : см. объявление "BigInteger::is_negative"
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.h(8): message : см. объявление "BigInteger"
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(120,26): error C2248: BigInteger::is_negative: невозможно обратиться к private член, объявленному в классе "BigInteger"
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.h(11): message : см. объявление "BigInteger::is_negative"
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.h(8): message : см. объявление "BigInteger"
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(141,9): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(144,9): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(174,9): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(177,9): warning C4018: <: несоответствие типов со знаком и без знака
+﻿  main.cpp
+  biginteger.vcxproj -> C:\Users\TS\source\repos\big_integer-main\Debug\biginteger.exe

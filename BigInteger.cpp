@@ -13,8 +13,8 @@ BigInteger::BigInteger(long long n) {
 		this->is_negative = false;	
 	}
 	
-	while (abs(n) >0) {
-		digits.push_back(abs(n) % 10);
+	while (n >0) {
+		digits.push_back(n % 10);
 		n /= 10;
 	}
 }
@@ -111,7 +111,7 @@ void BigInteger::print() {
 	std::cout << "\n";
 }
 
-const BigInteger BigInteger::operator +() const {
+const BigInteger BigInteger::operator +() const  {
 	return BigInteger(*this);
 }
 
@@ -166,9 +166,9 @@ BigInteger operator - (BigInteger left, BigInteger right) {
 		return -(right - left);
 	}
 	std::vector<int> result;
-	int size = std::max(left.digits.size(), right.digits.size());
+	int size = left.digits.size();
 	int carry = 0;
-	for (int i = 0; i < size-1; ++i) {
+	for (int i = 0; i < size; ++i) {
 		int cur = carry;
 
 		if (i < left.digits.size()) {

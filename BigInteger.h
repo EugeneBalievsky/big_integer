@@ -15,7 +15,8 @@ public:
 	BigInteger(long long n);
 	BigInteger(std::string s);
 	BigInteger(std::vector<int>& digits);
-	friend const BigInteger operator - (const BigInteger& i);
+    const BigInteger operator +() const;
+	const BigInteger operator -() const;
 	friend bool operator ==  (const BigInteger& left, const BigInteger& right);
 	friend bool operator !=  (const BigInteger& left, const BigInteger& right);
 	friend bool operator <  (const BigInteger& left, const BigInteger& right);
