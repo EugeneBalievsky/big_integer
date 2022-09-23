@@ -8,8 +8,9 @@
 
 int main() {
 	BigInteger n(-1989);
-	BigInteger m("988");
-	BigInteger s = n + m;
+	BigInteger m(-988);
+	BigInteger s = n - m;
+
 	
 	n.print();
 	m.print();

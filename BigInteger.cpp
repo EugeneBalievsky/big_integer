@@ -13,7 +13,7 @@ BigInteger::BigInteger(long long n) {
 		this->is_negative = false;	
 	}
 	
-	while (n >0) {
+	while (n != 0) {
 		digits.push_back(n % 10);
 		n /= 10;
 	}
@@ -31,7 +31,6 @@ BigInteger::BigInteger(std::string s) {
 	}
 		
 	for (int i = s.size()-1; i >= a; --i) {
-		
 		digits.push_back(s[i] - '0');
 	}
 }
@@ -97,7 +96,7 @@ bool operator >  (const BigInteger& left, const BigInteger& right) {
 	return !(left <= right);
 }
 
-bool operator >=  (BigInteger left, BigInteger right) {
+bool operator >=  (const BigInteger& left, const BigInteger& right) {
 	return !(left < right);
 }
 
@@ -132,6 +131,9 @@ BigInteger operator + (const BigInteger& left, const BigInteger& right) {
 		}
 		
 	}
+	else if (right.is_negative) {
+		return left - (-right);
+	}
 	std::vector<int> result;
 	int size = std::max(left.digits.size(), right.digits.size());
 	int carry = 0;
@@ -151,11 +153,10 @@ BigInteger operator + (const BigInteger& left, const BigInteger& right) {
 	if (carry == 1) {
 		result.push_back(1);
 	}
-
-	return BigInteger(result);
+	return result;
 }
  
-BigInteger operator - (BigInteger left, BigInteger right) {
+BigInteger operator - (const BigInteger& left, const BigInteger& right) {
 	if (right.is_negative) {
 		return left + (-right);
 	}
@@ -180,8 +181,7 @@ BigInteger operator - (BigInteger left, BigInteger right) {
 		result.push_back((10 + cur) % 10);
 		carry = -(cur < 0);
 	}
-
-	return BigInteger(result);
+	return result;
 }
 
 

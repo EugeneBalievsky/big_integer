@@ -24,10 +24,10 @@ public:
 	friend bool operator >  (const BigInteger& left, const BigInteger& right);
 	friend bool operator >=  (const BigInteger& left, const BigInteger& right);
 	friend BigInteger operator + (const BigInteger& left, const BigInteger& right);
-	friend BigInteger operator - (BigInteger left, BigInteger right);
+	friend BigInteger operator - (const BigInteger& left, const BigInteger& right);
 	void print();
 
-
+	 
 
 };
 
