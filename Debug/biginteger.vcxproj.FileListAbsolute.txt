@@ -1,1 +1,2 @@
 C:\Users\TS\source\repos\big_integer-main\Debug\biginteger.exe
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\Debug\biginteger.exe

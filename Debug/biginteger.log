@@ -1,2 +1,13 @@
-﻿  main.cpp
-  biginteger.vcxproj -> C:\Users\TS\source\repos\big_integer-main\Debug\biginteger.exe
+﻿  BigInteger.cpp
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(49,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(143,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(146,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(175,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(178,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(189,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(191,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(193,25): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(195,16): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  main.cpp
+  Создание кода...
+  biginteger.vcxproj -> C:\Users\EVGENE\source\repos\biginteger\biginteger\Debug\biginteger.exe

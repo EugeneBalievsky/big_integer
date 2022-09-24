@@ -7,14 +7,16 @@
 
 
 int main() {
-	BigInteger n(-1989);
-	BigInteger m(-988);
-	BigInteger s = n - m;
+	BigInteger n(-988);
+	BigInteger m("222");
+	BigInteger s = n + m;
+	BigInteger l = n * m;
 
 	
 	n.print();
 	m.print();
 	s.print();
+	l.print();
 	
 	return 0;
 }

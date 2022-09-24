@@ -134,7 +134,7 @@ BigInteger operator + (const BigInteger& left, const BigInteger& right) {
 	else if (right.is_negative) {
 		return left - (-right);
 	}
-	std::vector<int> result;
+	BigInteger result;
 	int size = std::max(left.digits.size(), right.digits.size());
 	int carry = 0;
 	for (int i = 0; i < size; ++i) {
@@ -146,12 +146,12 @@ BigInteger operator + (const BigInteger& left, const BigInteger& right) {
 		if (i < right.digits.size()) {
 			cur += right.digits[i];
 		}
-		result.push_back(cur % 10);
+		result.digits.push_back(cur % 10);
 		carry = (cur >= 10);
 	}
 
 	if (carry == 1) {
-		result.push_back(1);
+		result.digits.push_back(1);
 	}
 	return result;
 }
@@ -166,7 +166,7 @@ BigInteger operator - (const BigInteger& left, const BigInteger& right) {
 	else if (left < right) {
 		return -(right - left);
 	}
-	std::vector<int> result;
+	BigInteger result;
 	int size = left.digits.size();
 	int carry = 0;
 	for (int i = 0; i < size; ++i) {
@@ -178,9 +178,24 @@ BigInteger operator - (const BigInteger& left, const BigInteger& right) {
 		if (i < right.digits.size()) {
 			cur -= right.digits[i];
 		}
-		result.push_back((10 + cur) % 10);
+		result.digits.push_back((10 + cur) % 10);
 		carry = -(cur < 0);
 	}
+	return result;
+}
+BigInteger operator * (const BigInteger& left, const BigInteger& right) {
+	BigInteger result;
+	result.digits.resize(left.digits.size() + right.digits.size());
+	for (int i = 0; i < left.digits.size(); ++i) {
+		int carry = 0;
+		for (int j = 0; j < right.digits.size() || carry != 0; ++j) {
+			long long cur = result.digits[i + j] + 
+				left.digits[i] * (j < right.digits.size() ? right.digits[j] : 0) + carry;
+			result.digits[i + j] = cur % 10;
+			carry = cur / 10;
+		}
+	}
+	(left.is_negative != right.is_negative ? result.is_negative = true : result.is_negative = false);
 	return result;
 }
 
