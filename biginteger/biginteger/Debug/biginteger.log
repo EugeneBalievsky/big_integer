@@ -1,0 +1,9 @@
+﻿  BigInteger.cpp
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(45,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(48,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(69,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(72,9): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.cpp(82,57): error C2511: BigInteger BigInteger::summ(BigInteger,BigInteger): перегруженная функция-член не найдена в "BigInteger"
+C:\Users\EVGENE\source\repos\biginteger\biginteger\biginteger\BigInteger.h(8): message : см. объявление "BigInteger"
+  main.cpp
+  Создание кода...
